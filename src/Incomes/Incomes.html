@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Incomes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="mainpage">
+        <div class="navbar">
+            <div class="user-con">
+                <img src="/imgs/avatar.png" alt="" />
+                <div class="text">
+                    <h2>RAHUL</h2>
+                    <p>FULL STACK DEVELOPER</p>
+                </div>
+            </div>
+            <ul class="menu-items">
+                <li><i class="fas fa-tachometer-alt"></i><a href="../Dashboard/dashboard.html">Dashboard</a></li>
+                <li  class="active"><i class="fas fa-arrow-up"></i><a href="#" >Income</a></li>
+                <li><i class="fas fa-arrow-down"></i><a href="../Expenses/expenses.html">Expenses</a></li>
+            </ul>
+        </div>
+        <div class="bigbar">
+            <h1>Incomes</h1>
+            <div class="income">
+                <h2>Total Income: <span>$1000</span></h2>
+            </div>         
+            <form onsubmit="validateForm()">
+                <div class="inputvalue">
+                    <input type="text" id="salarytitle" placeholder="Salary Title"> <br>
+                    <input type="text" id="salaryamount" placeholder="Salary Amount"> <br>
+                    <input type="date" id="salarydate" placeholder="Enter A Date"> <br>
+                    <select id="salarycategory">
+                        <option>Select Option</option>
+                        <option>Education</option>
+                        <option>Groceries</option>
+                        <option>Health</option>
+                        <option>Subscriptions</option>
+                        <option>Takeaways</option>
+                        <option>Clothing</option>  
+                        <option>Travelling</option>  
+                        <option>Other</option>  
+                    </select> <br>
+                    <textarea placeholder="Add A Reference" cols="30" rows="10"></textarea> <br>
+                    <button class="add" type="submit">+ Add Income</button>
+                </div>
+            </form>
+                <div class="valueincome">
+                    <div class="icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h2>Rent</h2><br>
+                    <h2><i class="fas fa-dollar-sign"></i> 1000</h2>
+                    <h2><i class="fas fa-calendar-alt"></i> 23/01/2024</h2>
+                    <h2> <i class="fas fa-comment"></i> Rent And Bills</h2>
+                    <div class="icondelete">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>    
+                
+                <div class="valueincome">
+                    <div class="icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h2>Dentist Appointment</h2><br>
+                    <h2><i class="fas fa-dollar-sign"></i> 2000</h2>
+                    <h2><i class="fas fa-calendar-alt"></i> 24/01/2024</h2>
+                    <h2><i class="fas fa-comment"></i> Tooth Removal</h2>
+                    <div class="icondelete">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div> 
+
+                <div class="valueincome">
+                    <div class="icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h2>Travelling</h2><br>
+                    <h2><i class="fas fa-dollar-sign"></i> 3000</h2>
+                    <h2><i class="fas fa-calendar-alt"></i> 25/01/2024</h2>
+                    <h2><i class="fas fa-comment"></i> Went To Spain</h2>
+                    <div class="icondelete">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="Incomes.js"></script>
+</body>
+</html>

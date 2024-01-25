@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="expenses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="mainpage">
+        <div class="navbar">
+            <div class="user-con">
+                <img src="/imgs/avatar.png" alt="" />
+                <div class="text">
+                    <h2>RAHUL</h2>
+                    <p>FULL STACK DEVELOPER</p>
+                </div>
+            </div>
+            <ul class="menu-items">
+                <li><i class="fas fa-tachometer-alt"></i><a href="../Dashboard/dashboard.html">Dashboard</a></li>
+                <li><i class="fas fa-arrow-up"></i><a href="../Incomes/Incomes.html">Income</a></li>
+                <li class="active"><i class="fas fa-arrow-down"></i><a href="#">Expenses</a></li>
+            </ul>
+        </div>
+        <div class="bigbar">
+            <h1>Expenses</h1>
+            <div class="income">
+                <h2>Total Expense: <span>$1000</span></h2>
+            </div>
+            <form onsubmit="validateForm()">
+                <div class="inputvalue">
+                    <input type="text" id="expenseTitle" placeholder="Expense Title"> <br>
+                    <input type="text" id="expenseAmount" placeholder="Expense Amount"> <br>
+                    <input type="date" id="expenseDate" placeholder="Enter A Date"> <br>
+                    <select id="expenseCategory">
+                        <option>Select Option</option>
+                        <option>Salary</option>
+                        <option>Freelancing</option>
+                        <option>Investments</option>
+                        <option>Stocks</option>
+                        <option>Bitcoin</option>
+                        <option>Bank Transfer</option>
+                        <option>Youtube</option>
+                        <option>Other</option>
+                    </select> <br>
+                    <textarea placeholder="Add A Reference" cols="30" rows="10"></textarea> <br>
+                    <button type="submit">+ Add Expense</button>
+                </div>
+            </form>
+            <div class="scrollable">
+                <div class="allincomes">
+                    <div class="valueincome">
+                        <div class="icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <h2>Rent</h2><br>
+                        <h2><i class="fas fa-dollar-sign"></i> 1000</h2>
+                        <h2><i class="fas fa-calendar-alt"></i> 23/01/2024</h2>
+                        <h2> <i class="fas fa-comment"></i> Rent And Bills</h2>
+                        <div class="icondelete">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="valueincome">
+                        <div class="icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <h2>Dentist Appointment</h2><br>
+                        <h2><i class="fas fa-dollar-sign"></i> 2000</h2>
+                        <h2><i class="fas fa-calendar-alt"></i> 24/01/2024</h2>
+                        <h2><i class="fas fa-comment"></i> Tooth Removal</h2>
+                        <div class="icondelete">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="valueincome">
+                        <div class="icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <h2>Travelling</h2><br>
+                        <h2><i class="fas fa-dollar-sign"></i> 3000</h2>
+                        <h2><i class="fas fa-calendar-alt"></i> 25/01/2024</h2>
+                        <h2><i class="fas fa-comment"></i> Went To Spain</h2>
+                        <div class="icondelete">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="valueincome">
+                        <div class="icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <h2>Travelling</h2><br>
+                        <h2><i class="fas fa-dollar-sign"></i> 3000</h2>
+                        <h2><i class="fas fa-calendar-alt"></i> 25/01/2024</h2>
+                        <h2><i class="fas fa-comment"></i> Went To Spain</h2>
+                        <div class="icondelete">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Expenses.js"></script>
+</body>
+
+</html>
