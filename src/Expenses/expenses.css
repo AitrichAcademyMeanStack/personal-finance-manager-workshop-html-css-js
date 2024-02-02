@@ -107,7 +107,8 @@ body {
     justify-content: space-between;
     position: relative;
     max-height: 80vh; 
-    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .bigbar::-webkit-scrollbar{
@@ -213,7 +214,7 @@ body {
 
 .valueincome .icon {
     font-size: 2rem;
-    color: red; /* Change to your desired color */
+    color: red;
     margin-bottom: 0.5rem;
     position: relative;
     top: 10px;
